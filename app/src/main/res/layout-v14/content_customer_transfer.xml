@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:scrollbars="none"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.delaroystudios.sqlitelogin.activities.CustomerTransferActivity"
+    tools:showIn="@layout/activity_customer_transfer">
+
+    <GridLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:columnCount="1"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/text_order_id"
+            android:layout_marginBottom="20dp"
+            android:text="รหัสการสั่งซื้อ: "
+            android:textSize="16sp" />
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayoutStyle"
+            app:hintTextAppearance="@style/HintStyle">
+
+            <EditText
+                android:id="@+id/pay_name"
+                style="@style/EditTextCustomerInfo"
+                android:hint="ชื่อบัญชีที่โอน"
+                android:inputType="text" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayoutStyle"
+            app:hintTextAppearance="@style/HintStyle">
+
+            <io.blackbox_vision.datetimepickeredittext.view.DatePickerEditText
+                android:id="@+id/date_picker"
+                style="@style/EditTextCustomerInfo"
+                android:hint="วัน เดือน ปี"
+                app:dateFormat="yyyy/MM/dd" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayoutStyle"
+            app:hintTextAppearance="@style/HintStyle">
+
+            <io.blackbox_vision.datetimepickeredittext.view.TimePickerEditText
+                android:id="@+id/time_picker"
+                style="@style/EditTextCustomerInfo"
+                android:hint="เวลา"
+                app:is24HourView="true"
+                app:timeFormat="HH:mm" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/TextInputLayoutStyle"
+            app:hintTextAppearance="@style/HintStyle">
+
+            <EditText
+                android:id="@+id/edit_amount"
+                style="@style/EditTextCustomerInfo"
+                android:hint="จำนวนเงิน"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_select_transfer_img"
+                android:text="@string/txt_select_transfer_image"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:id="@+id/img_transfer_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_transfer_ok"
+            style="@style/ButtonStyle"
+            android:layout_width="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="ตกลง" />
+    </GridLayout>
+</ScrollView>

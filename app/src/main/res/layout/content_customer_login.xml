@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      app:layout_behavior="@string/appbar_scrolling_view_behavior"
+      tools:context="com.delaroystudios.sqlitelogin.activities.CustomerLoginActivity"
+      tools:showIn="@layout/activity_customer_login"
+      android:layout_gravity="top|center_horizontal"
+      android:scrollbars="none"
+>
+
+      <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_horizontal"
+                  android:text="ใส่เบอร์โทรศัพท์และรหัสผ่านที่ใช้สั่งซื้อ"
+                  android:textSize="18sp"
+            />
+            <EditText  android:id="@+id/edit_phone"
+                       style="@style/EditTextCustomerInfo"
+                       android:layout_width="200dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="10dp"
+                       android:hint="เบอร์โทรศัพท์"
+                       android:inputType="phone"
+                       android:textSize="18sp"
+            />
+            <EditText  android:id="@+id/edit_password"
+                       style="@style/EditTextCustomerInfo"
+                       android:layout_width="200dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="5dp"
+                       android:hint="รหัสผ่าน"
+                       android:inputType="textPassword"
+                       android:textSize="18sp"
+            />
+            <Button  android:id="@+id/bt_next_step"
+                     style="@style/ButtonStyle"
+                     android:layout_width="200dp"
+                     android:layout_marginTop="30dp"
+                     android:text="ขั้นตอนถัดไป"
+            />
+      </LinearLayout>
+
+</ScrollView>

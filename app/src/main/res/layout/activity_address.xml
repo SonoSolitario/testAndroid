@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="ชื่อ-ที่อยู่ในการจัดส่ง"
+        android:textSize="30sp">
+    </android.support.v7.widget.AppCompatTextView>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayoutAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp" >
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/textInputEditAd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="กรอกที่อยู่ในการจัดส่ง"
+            android:textColorHint="@color/colorText"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="@color/colorText1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/appCompatButtonConfirmAD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorText"
+        android:background="@color/colorTextHint"
+        android:text="บันทึก" />
+</LinearLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nestedScrollView"
+    android:padding="20dp"
+    tools:context="activities.PaymentActivity">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="แจ้งชำระเงิน"
+            android:textSize="30sp">
+        </android.support.v7.widget.AppCompatTextView>
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="กรุณากรอกให้ครับทุกช่อง"
+            android:textSize="15sp">
+        </android.support.v7.widget.AppCompatTextView>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditPay1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="หมายเลขออเดอร์"
+                android:textColorHint="@color/colorText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorText1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPay2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextPay2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ชื่อบัญชี"
+                android:textColorHint="@color/colorText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorText1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPay3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextPay3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="เลขบัญชี"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorText1"
+                android:textColorHint="@color/colorText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPay4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextPay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="ธนาคาราที่โอน"
+                android:textColorHint="@color/colorText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/colorText1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPay5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextPay5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="วันที่โอน"
+                android:textColorHint="@color/colorText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorText1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInputLayoutPay6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/textInputEditTextPay6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="เวลาที่โอน"
+                android:textColorHint="@color/colorText"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/colorText1" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/appCompatButtonPay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorText"
+            android:background="@color/colorTextHint"
+            android:text="แจ้งชำระเงิน" />
+
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.v4.widget.NestedScrollView>
